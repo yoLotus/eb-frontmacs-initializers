@@ -1,4 +1,9 @@
-;;; custom-packages.el
+;;; custom-packages.el -- install extra packages
+
+;;; Commentary:
+;; nil now
+
+;;; Code:
 
 (require 'package)
 (package-initialize)
@@ -19,7 +24,8 @@
     go-mode                             ; golang mode
     all-the-icons                       ; fancy icons to shiny emacs
     graphql-mode                        ; mode for graphql DSL
-    ) "important package to install")
+    prettier-js                         ; prettier js files
+    ) "Extra package to Frontmacs to install.")
 
 ;; check if packages are installed and install them if not
 (dolist (package eb-packages)

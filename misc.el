@@ -1,4 +1,4 @@
-;;; misc.el -- a lot af tiny things
+;;; misc.el -- a lot (soon) af tiny things
 
 ;;; Commentary:
 ;; nil for now

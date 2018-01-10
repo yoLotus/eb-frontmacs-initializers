@@ -23,5 +23,9 @@
 (require 'helpers)
 (global-set-key (kbd "M-RET") #'repeat-line)
 
+;; general
+;; kill this buffer without prompting
+(global-set-key (kbd "C-x k") 'kill-this-buffer)
+
 (provide 'custom-global-bindings)
 ;;; custom-global-bindings.el ends here

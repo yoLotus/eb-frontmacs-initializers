@@ -3,6 +3,9 @@
 ;;; Commentary:
 ;; nil now
 
+;; some files in this directory need each other
+(add-to-list 'load-path (expand-file-name "initializers" "~/.emacs.d"))
+
 ;;; code:
 ;; dired
 (require 'dired)
@@ -15,6 +18,10 @@
 ;; comment-dwim-2
 (require 'comment-dwim-2)
 (global-set-key (kbd "M-;") 'comment-dwim-2)
+
+;; personal helpers (define in helpers.el)
+(require 'helpers)
+(global-set-key (kbd "M-RET") 'repeat-line)
 
 (provide 'custom-global-bindings)
 ;;; custom-global-bindings.el ends here

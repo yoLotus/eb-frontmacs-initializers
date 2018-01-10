@@ -13,15 +13,15 @@
 
 ;; iedit
 (require 'iedit)
-(global-set-key (kbd "C-c i") 'iedit-mode)
+(global-set-key (kbd "C-c i") #'iedit-mode)
 
 ;; comment-dwim-2
 (require 'comment-dwim-2)
-(global-set-key (kbd "M-;") 'comment-dwim-2)
+(global-set-key (kbd "M-;") #'comment-dwim-2)
 
 ;; personal helpers (define in helpers.el)
 (require 'helpers)
-(global-set-key (kbd "M-RET") 'repeat-line)
+(global-set-key (kbd "M-RET") #'repeat-line)
 
 (provide 'custom-global-bindings)
 ;;; custom-global-bindings.el ends here

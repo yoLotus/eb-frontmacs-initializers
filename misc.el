@@ -11,5 +11,8 @@
 ;; user restclient-mode for file with `.erc` extension.
 (add-to-list 'auto-mode-alist '("\\.erc$" . restclient-mode))
 
+;; guru
+(put 'narrow-to-region 'disabled nil)   ; enable narrowing by default
+
 (provide 'misc)
 ;;; misc.el ends here

@@ -9,5 +9,5 @@
 (require 'js2-mode)
 (setq js2-strict-missing-semi-warning nil)
 
-(provide 'misc)
+(provide 'eb-js-mode)
 ;;; eb-js-mode.el ends here

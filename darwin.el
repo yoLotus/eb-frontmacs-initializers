@@ -11,9 +11,6 @@
       (setq mac-option-key-is-meta nil)
       (setq mac-command-key-is-meta t)
       (setq mac-command-modifier 'meta)
-      (setq mac-option-modifier nil)
-
-      ;; I use an AZERTY keyboard (oups)
-      (global-set-key (kbd "M-n") '(lambda () (interactive) (insert "~")))))
+      (setq mac-option-modifier nil)))
 
 ;;; darwin.el ends here

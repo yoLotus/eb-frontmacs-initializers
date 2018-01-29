@@ -14,5 +14,9 @@
 ;; guru
 (put 'narrow-to-region 'disabled nil)   ; enable narrowing by default
 
+;; tab hell
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+
 (provide 'misc)
 ;;; misc.el ends here

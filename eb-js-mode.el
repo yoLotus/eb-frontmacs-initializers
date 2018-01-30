@@ -13,5 +13,8 @@
 ;; indent case statement in switch block
 (setq js-switch-indent-offset 2)
 
+;; prettier
+(setq-default prettier-js-args '("--no-semi" "--single-quote"))
+
 (provide 'eb-js-mode)
 ;;; eb-js-mode.el ends here

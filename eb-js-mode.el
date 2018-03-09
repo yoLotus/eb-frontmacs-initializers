@@ -15,6 +15,9 @@
 
 ;; prettier
 (setq-default prettier-js-args '("--no-semi" "--single-quote"))
+;;; enable it on all jsx? files
+(add-hook 'js2-mode-hook 'prettier-js-mode)
+(add-hook 'web-mode-hook 'prettier-js-mode)
 
 (provide 'eb-js-mode)
 ;;; eb-js-mode.el ends here

@@ -25,6 +25,8 @@
     all-the-icons                       ; fancy icons to shiny emacs
     graphql-mode                        ; mode for graphql DSL
     prettier-js                         ; prettier js files
+    treemacs                            ; files browses for Emacs
+    treemacs-projectile                 ; projectile integration form treemacs package
     ) "Extra package to Frontmacs to install.")
 
 ;; check if packages are installed and install them if not

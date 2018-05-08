@@ -3,6 +3,9 @@
 ;;; Commentary:
 ;; nil now
 
+;; other window but in back reverse cycle
+(global-set-key (kbd "C-c o") '(lambda () (interactive) (other-window -1)))
+
 ;; some files in this directory need each other
 (add-to-list 'load-path (expand-file-name "initializers" "~/.emacs.d"))
 

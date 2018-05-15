@@ -27,6 +27,7 @@
     prettier-js                         ; prettier js files
     treemacs                            ; files browses for Emacs
     treemacs-projectile                 ; projectile integration form treemacs package
+    nyan-mode                           ; show point position in buffer with nyancat
     ) "Extra package to Frontmacs to install.")
 
 ;; check if packages are installed and install them if not

@@ -19,5 +19,23 @@
 (add-hook 'js2-mode-hook 'prettier-js-mode)
 (add-hook 'web-mode-hook 'prettier-js-mode)
 
+;;; rjsx-mode
+
+(require 'rjsx-mode)
+
+(defun rjsx-region-wrap (node)
+  "Wrap an region with NODE tag."
+  (interactive "sTag wrapper: ")
+  (if (region-active-p)
+      (save-mark-and-excursion
+       (progn
+         (if (< (mark) (point)) (exchange-point-and-mark))
+         (insert (concat "<" node ">"))
+         (exchange-point-and-mark)
+         (insert (concat "</" node ">"))))
+    (message "no active region")))
+
+(define-key rjsx-mode-map (kbd "C-c C-w") 'rjsx-region-wrap)
+
 (provide 'eb-js-mode)
 ;;; eb-js-mode.el ends here

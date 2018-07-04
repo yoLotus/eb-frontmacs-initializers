@@ -10,14 +10,14 @@
 
 (defvar eb-packages
   '(
-    exec-path-from-shell		; ensure GUI emacs uses my env var
-    comment-dwim-2			; comment line or end of line
-    dockerfile-mode			; mode to edit Dockerfile
-    org-bullets				; prettiers headers for org mode
-    ruby-tools				; helpers for ruby
-    json-mode				; yes handle json is prety convenient
-    markdown-mode			; write markdown
-    iedit				; edit multiple region in one time
+    exec-path-from-shell        		; ensure GUI emacs uses my env var
+    comment-dwim-2			            ; comment line or end of line
+    dockerfile-mode			            ; mode to edit Dockerfile
+    org-bullets				            ; prettiers headers for org mode
+    ruby-tools				            ; helpers for ruby
+    json-mode				            ; yes handle json is prety convenient
+    markdown-mode			            ; write markdown
+    iedit				                ; edit multiple region in one time
     restclient                          ; REST client
     haml-mode                           ; haml mode for rails views
     powerline                           ; fancy buffer info theme
@@ -28,6 +28,8 @@
     treemacs                            ; files browses for Emacs
     treemacs-projectile                 ; projectile integration form treemacs package
     nyan-mode                           ; show point position in buffer with nyancat
+    projectile-rails                    ; projectile support for rails project
+    rvm                                 ; rvm integration in Emacs
     ) "Extra package to Frontmacs to install.")
 
 ;; check if packages are installed and install them if not

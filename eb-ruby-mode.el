@@ -12,5 +12,8 @@
 ;; enable ruby-tools-mode for haml file
 (add-hook 'haml-mode-hook 'ruby-tools-mode)
 
+;; enable projectile-rails capatibilities
+(projectile-rails-global-mode)
+
 (provide 'eb-ruby-mode)
 ;;; eb-ruby-mode.el ends here

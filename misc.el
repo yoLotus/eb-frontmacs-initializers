@@ -18,5 +18,8 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 
+;; funny nyan buffer position shower
+(nyan-mode)
+
 (provide 'misc)
 ;;; misc.el ends here

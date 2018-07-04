@@ -30,12 +30,15 @@
     nyan-mode                           ; show point position in buffer with nyancat
     projectile-rails                    ; projectile support for rails project
     rvm                                 ; rvm integration in Emacs
+    yasnippet-snippets                  ; useful snippets for yas
     ) "Extra package to Frontmacs to install.")
 
 ;; check if packages are installed and install them if not
 (dolist (package eb-packages)
   (progn
     (if (not (package-installed-p package))
-	(package-install package))))
+	    (package-install package))))
+
+(provide 'custom-packages)
 
 ;;; custom-packages.el ends here

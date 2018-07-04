@@ -3,6 +3,9 @@
 ;;; Commentary:
 ;; nil now
 
+;; be sure that custom packages are installed
+(require 'global-packages)
+
 ;; other window but in back reverse cycle
 (global-set-key (kbd "C-c o") '(lambda () (interactive) (other-window -1)))
 

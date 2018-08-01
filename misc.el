@@ -21,5 +21,8 @@
 ;; funny nyan buffer position shower
 (nyan-mode)
 
+;; unexpected C-x C-c hits happen too often
+(setq confirm-kill-emacs 'y-or-n-p)
+
 (provide 'misc)
 ;;; misc.el ends here

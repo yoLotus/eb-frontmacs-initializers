@@ -15,5 +15,10 @@
 ;; enable projectile-rails capatibilities
 (projectile-rails-global-mode)
 
+;; set fill-column value
+(add-hook 'ruby-mode-hook
+          (lambda ()
+            (set-fill-column 120)))
+
 (provide 'eb-ruby-mode)
 ;;; eb-ruby-mode.el ends here

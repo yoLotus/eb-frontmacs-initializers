@@ -37,5 +37,8 @@
 
 (define-key rjsx-mode-map (kbd "C-c C-w") 'rjsx-region-wrap)
 
+;; coffee mode
+(custom-set-variables '(coffee-tab-width 2))
+
 (provide 'eb-js-mode)
 ;;; eb-js-mode.el ends here

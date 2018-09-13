@@ -19,6 +19,8 @@
 (add-hook 'ruby-mode-hook
           (lambda ()
             (set-fill-column 120)))
+;;
+(add-hook 'after-init-hook 'inf-ruby-switch-setup)
 
 (provide 'eb-ruby-mode)
 ;;; eb-ruby-mode.el ends here

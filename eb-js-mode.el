@@ -40,5 +40,9 @@
 ;; coffee mode
 (custom-set-variables '(coffee-tab-width 2))
 
+(add-hook 'coffee-mode-hook
+          (lambda ()
+            (set-fill-column 120)))
+
 (provide 'eb-js-mode)
 ;;; eb-js-mode.el ends here

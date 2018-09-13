@@ -24,5 +24,9 @@
 ;; unexpected C-x C-c hits happen too often
 (setq confirm-kill-emacs 'y-or-n-p)
 
+;; multiple cursors
+(global-unset-key (kbd "M-<down-mouse-1>"))
+(global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
+
 (provide 'misc)
 ;;; misc.el ends here

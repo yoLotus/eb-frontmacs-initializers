@@ -32,6 +32,8 @@
 ;; general
 ;; kill this buffer without prompting
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
+(global-set-key (kbd "C-c b f") 'copy-buffer-name-with-line-number)
+
 
 (provide 'custom-global-bindings)
 ;;; custom-global-bindings.el ends here

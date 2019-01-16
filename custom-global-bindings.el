@@ -27,7 +27,6 @@
 
 ;; personal helpers (define in helpers.el)
 (require 'helpers)
-(global-set-key (kbd "M-RET") #'repeat-line)
 
 ;; general
 ;; kill this buffer without prompting

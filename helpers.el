@@ -16,19 +16,6 @@
       (kill-ring-save _begin _end)))
   )
 
-(defun repeat-line ()
-  "Copy current line and yank it the line under the point."
-  (interactive)
-  (let (
-	(_col (current-column))
-	)
-    (copy-line)
-    (end-of-line)
-    (newline)
-    (yank)
-    (move-to-column _col))
-  )
-
 (defun copy-buffer-name-with-line-number ()
   "Custom helper.
 Insert in kill ring the file name of the buffer name with the

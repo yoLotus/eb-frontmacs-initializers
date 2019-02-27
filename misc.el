@@ -28,7 +28,14 @@
 (global-unset-key (kbd "M-<down-mouse-1>"))
 (global-set-key (kbd "M-<mouse-1>") 'mc/add-cursor-on-click)
 
+;; projectile
+(add-to-list 'projectile-globally-ignored-directories "vendor")
+
 ;; remove annoying alarm
 (setq ring-bell-function 'ignore)
+
+;; emojis
+(add-hook 'after-init-hook 'global-emojify-mode)
+
 (provide 'misc)
 ;;; misc.el ends here

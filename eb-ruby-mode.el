@@ -22,7 +22,9 @@
 ;; set fill-column value
 (add-hook 'ruby-mode-hook
           (lambda ()
-            (set-fill-column 120)))
+            (progn
+              (set-fill-column 120)
+              (local-set-key (kbd "C-c C-u") 'string-inflection-ruby-style-cycle))))
 ;;
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 

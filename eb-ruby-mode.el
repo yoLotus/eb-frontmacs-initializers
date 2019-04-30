@@ -11,6 +11,10 @@
 
 ;; enable ruby-tools-mode for haml file
 (add-hook 'haml-mode-hook 'ruby-tools-mode)
+(add-hook 'web-mode-hook
+          (lambda ()
+            (if (string= web-mode-engine "erb")
+                (ruby-tools-mode))))
 
 ;; enable projectile-rails capatibilities
 (projectile-rails-global-mode)

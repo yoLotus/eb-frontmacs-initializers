@@ -25,6 +25,11 @@
             (progn
               (set-fill-column 120)
               (local-set-key (kbd "C-c C-u") 'string-inflection-ruby-style-cycle))))
+
+(add-hook 'projectile-after-switch-project-hook
+          (lambda ()
+            (rvm-activate-corresponding-ruby)))
+
 ;;
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
 

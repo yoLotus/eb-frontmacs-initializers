@@ -30,6 +30,7 @@
 
 ;; projectile
 (add-to-list 'projectile-globally-ignored-directories "vendor")
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 ;; remove annoying alarm
 (setq ring-bell-function 'ignore)

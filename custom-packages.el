@@ -32,6 +32,7 @@
     rvm                                 ; rvm integration in Emacs
     yasnippet-snippets                  ; useful snippets for yas
     string-inflection                   ; easily case switcher
+    lsp-ui                              ; lsp ui for Emacs (should auto install lsp-mode)
     ) "Extra package to Frontmacs to install.")
 
 ;; check if packages are installed and install them if not

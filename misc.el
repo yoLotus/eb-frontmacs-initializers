@@ -38,5 +38,15 @@
 ;; emojis
 (add-hook 'after-init-hook 'global-emojify-mode)
 
+;; recentf-mode (surprisingly not set by default)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(setq recentf-max-saved-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+;; winner-mode (managing splitting windows, don't know how I can live
+;; without before)
+(winner-mode)
+
 (provide 'misc)
 ;;; misc.el ends here

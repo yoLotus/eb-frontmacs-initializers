@@ -24,7 +24,8 @@
           (lambda ()
             (progn
               (set-fill-column 120)
-              (local-set-key (kbd "C-c C-u") 'string-inflection-ruby-style-cycle))))
+              (local-set-key (kbd "C-c C-u") 'string-inflection-ruby-style-cycle)
+              (yafolding-mode t))))
 
 (add-hook 'projectile-after-switch-project-hook
           (lambda ()

@@ -8,4 +8,8 @@
 (use-package lsp-mode
   :hook (ruby-mode . lsp)
   :commands lsp)
+
+(custom-set-variables
+ '(company-lsp-cache-candidates (quote auto))
+ '(lsp-auto-guess-root t))
 ;;; eb-lsp.el ends here

@@ -15,6 +15,7 @@
     dockerfile-mode			            ; mode to edit Dockerfile
     org-bullets				            ; prettiers headers for org mode
     ruby-tools				            ; helpers for ruby
+    robe                                ; ruby files navigator
     json-mode				            ; yes handle json is prety convenient
     markdown-mode			            ; write markdown
     iedit				                ; edit multiple region in one time
@@ -23,7 +24,7 @@
     powerline                           ; fancy buffer info theme
     go-mode                             ; golang mode
     all-the-icons                       ; fancy icons to shiny emacs
-    graphql-mode                        ; mode for graphql DSL
+    ; graphql-mode                        ; mode for graphql DSL
     prettier-js                         ; prettier js files
     treemacs                            ; files browses for Emacs
     treemacs-projectile                 ; projectile integration form treemacs package

@@ -4,7 +4,7 @@
 ;; nil now
 
 ;; be sure that custom packages are installed
-(require 'custom-packages "./custom-packages.el")
+(require 'custom-packages (expand-file-name "initializers/custom-packages.el" user-emacs-directory))
 
 ;; other window but in back reverse cycle
 (global-set-key (kbd "C-c o") '(lambda () (interactive) (other-window -1)))

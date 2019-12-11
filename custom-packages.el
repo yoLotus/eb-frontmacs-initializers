@@ -35,6 +35,7 @@
     string-inflection                   ; easily case switcher
     lsp-ui                              ; lsp ui for Emacs (should auto install lsp-mode)
     yafolding                           ; folding code block based on indentation
+    cider                               ; clojure development environment
     ) "Extra package to Frontmacs to install.")
 
 ;; check if packages are installed and install them if not
